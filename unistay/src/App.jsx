@@ -1,27 +1,43 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import WhyChoose from "./components/WhyChoose";
+import PopularHostels from "./components/PopularHostels";
+import About from "./components/About";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-function App(){
+function App() {
+  return (
+    <>
 
-return(
+      <Navbar />
 
-<>
+      {/* Home Section */}
+      <div id="home">
+        <Hero />
+      </div>
 
-<Navbar/>
+      {/* Features */}
+      <WhyChoose />
 
+      {/* Popular Hostels */}
+      <PopularHostels />
 
-<div id="home">
+      {/* About */}
+      <About />
 
-<Hero/>
+      {/* Testimonials */}
+      <Testimonials />
 
-</div>
+      {/* Contact */}
+      <Contact />
 
+      {/* Footer */}
+      <Footer />
 
-
-</>
-
-)
-
+    </>
+  );
 }
 
-export default App
+export default App;
