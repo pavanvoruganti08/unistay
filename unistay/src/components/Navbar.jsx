@@ -34,13 +34,26 @@ Stay
 
 <ul className="hidden md:flex gap-12 text-white">
 
-<li>Home</li>
+<a href="#home">
 
-<li>Features</li>
+Home
 
-<li>About</li>
+</a>
 
-<li>Contact</li>
+<a href="#features">
+
+Features
+
+</a>
+<a href="#about">
+
+About
+
+</a><a href="#contact">
+
+Contact
+
+</a>
 
 </ul>
 
