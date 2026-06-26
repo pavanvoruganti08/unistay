@@ -1,6 +1,5 @@
 export default function OTPVerification(){
 
-
 return(
 
 <div className="min-h-screen bg-[#12052c]
@@ -13,19 +12,10 @@ justify-center">
 
 
 
-<div className="bg-white/10
-
-backdrop-blur-xl
-
-p-10
-
-rounded-3xl
-
-w-[420px]">
+<div className="bg-white p-10 rounded-3xl w-[450px]">
 
 
-
-<h1 className="text-3xl font-bold text-white text-center">
+<h1 className="text-3xl font-bold text-center">
 
 OTP Verification
 
@@ -34,29 +24,25 @@ OTP Verification
 
 
 
-<p className="text-slate-300 text-center mt-4">
+<p className="text-gray-500 mt-4 text-center">
 
-
-Enter the OTP sent to your email
+Enter the 4 digit OTP
 
 
 </p>
 
 
 
-
-<div className="flex gap-4 mt-10 justify-center">
-
+<div className="flex gap-4 justify-center mt-10">
 
 
-<input className="w-14 h-14 text-center rounded-xl"/>
+<input className="w-14 h-14 border rounded-xl text-center"/>
 
-<input className="w-14 h-14 text-center rounded-xl"/>
+<input className="w-14 h-14 border rounded-xl text-center"/>
 
-<input className="w-14 h-14 text-center rounded-xl"/>
+<input className="w-14 h-14 border rounded-xl text-center"/>
 
-<input className="w-14 h-14 text-center rounded-xl"/>
-
+<input className="w-14 h-14 border rounded-xl text-center"/>
 
 
 </div>
@@ -66,18 +52,7 @@ Enter the OTP sent to your email
 
 <button
 
-className="w-full mt-8
-
-bg-purple-600
-
-hover:bg-purple-700
-
-text-white
-
-p-4
-
-rounded-xl">
-
+className="w-full mt-8 bg-purple-600 text-white p-4 rounded-xl">
 
 Verify OTP
 
@@ -86,15 +61,12 @@ Verify OTP
 
 
 
-
 </div>
 
 
 
 </div>
-
 
 )
-
 
 }

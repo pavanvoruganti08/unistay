@@ -1,22 +1,16 @@
+import { Link } from "react-router-dom";
+
 export default function ForgotPassword() {
 
-return (
+return(
 
 <div className="min-h-screen bg-[#12052c] flex items-center justify-center">
 
 
-<div className="bg-white/10 backdrop-blur-xl
-
-p-10
-
-rounded-3xl
-
-w-[400px]
-
-shadow-2xl">
+<div className="bg-white p-10 rounded-3xl w-[420px]">
 
 
-<h1 className="text-3xl font-bold text-white text-center">
+<h1 className="text-3xl font-bold text-center">
 
 Forgot Password
 
@@ -24,47 +18,29 @@ Forgot Password
 
 
 
-<p className="text-slate-300 mt-4 text-center">
+<p className="text-gray-500 mt-4 text-center">
 
-Enter your registered email
+Enter your email address
+
 
 </p>
 
 
 
+
 <input
 
-type="email"
+placeholder="Email"
 
-placeholder="Email Address"
-
-className="w-full mt-8
-
-p-4
-
-rounded-xl
-
-outline-none"
+className="w-full border p-4 rounded-xl mt-8"
 
 />
 
 
 
-
 <button
 
-className="w-full mt-6
-
-bg-purple-600
-
-hover:bg-purple-700
-
-text-white
-
-p-4
-
-rounded-xl">
-
+className="w-full mt-6 bg-purple-600 text-white p-4 rounded-xl">
 
 Send OTP
 
@@ -73,11 +49,31 @@ Send OTP
 
 
 
-</div>
+<p className="text-center mt-6">
+
+
+<Link
+
+to="/login"
+
+className="text-purple-600">
+
+Back to Login
+
+
+</Link>
+
+
+</p>
 
 
 
 </div>
+
+
+
+</div>
+
 
 )
 

@@ -1,113 +1,159 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
+  return (
+    <nav className="fixed top-4 left-0 right-0 z-50">
 
-return(
+      <div className="max-w-7xl mx-auto">
 
-<nav className="fixed top-4 left-0 right-0 z-50">
+        <div
+          className="
+          bg-white/10
+          backdrop-blur-xl
+          rounded-full
+          px-10
+          py-4
+          flex
+          justify-between
+          items-center
+        "
+        >
 
-<div className="max-w-7xl mx-auto">
+          {/* Logo */}
+          <Link to="/">
 
+            <h1 className="text-4xl font-bold text-white">
 
-<div className="bg-white/10 backdrop-blur-xl
+              Uni
 
-rounded-full
+              <span className="text-purple-400">
 
-px-10 py-4
+                Stay
 
-flex justify-between items-center">
+              </span>
 
+            </h1>
 
-<h1 className="text-4xl font-bold text-white">
+          </Link>
 
-Uni
 
-<span className="text-purple-400">
 
-Stay
+          {/* Navigation Links */}
+          <ul className="hidden md:flex gap-12 text-white">
 
-</span>
+            <li>
 
-</h1>
+              <a
+                href="#home"
+                className="hover:text-purple-400 transition"
+              >
 
+                Home
 
+              </a>
 
-<ul className="hidden md:flex gap-12 text-white">
+            </li>
 
 
-<li>
 
-<a href="#home">
+            <li>
 
-Home
+              <a
+                href="#features"
+                className="hover:text-purple-400 transition"
+              >
 
-</a>
+                Features
 
-</li>
+              </a>
 
+            </li>
 
-<li>
 
-<a href="#features">
 
-Features
+            <li>
 
-</a>
+              <a
+                href="#about"
+                className="hover:text-purple-400 transition"
+              >
 
-</li>
+                About
 
+              </a>
 
+            </li>
 
-<li>
 
-<a href="#about">
 
-About
+            <li>
 
-</a>
+              <a
+                href="#contact"
+                className="hover:text-purple-400 transition"
+              >
 
-</li>
+                Contact
 
+              </a>
 
+            </li>
 
-<li>
+          </ul>
 
-<a href="#contact">
 
-Contact
 
-</a>
+          {/* Buttons */}
+          <div className="flex gap-4">
 
-</li>
+            <Link to="/login">
 
+              <button
+                className="
+                px-6
+                py-3
+                text-white
+                hover:text-purple-400
+                transition
+              "
+              >
 
+                Login
 
-</ul>
+              </button>
 
+            </Link>
 
 
-<button className="bg-gradient-to-r
 
-from-purple-600
+            <Link to="/signup">
 
-to-pink-500
+              <button
+                className="
+                bg-gradient-to-r
+                from-purple-600
+                to-pink-500
+                px-7
+                py-3
+                rounded-full
+                text-white
+                hover:scale-105
+                transition
+              "
+              >
 
-px-7 py-3
+                Get Started
 
-rounded-full
+              </button>
 
-text-white">
+            </Link>
 
-Get Started
+          </div>
 
-</button>
+        </div>
 
+      </div>
 
-
-</div>
-
-</div>
-
-</nav>
-
-)
-
+    </nav>
+  );
 }
