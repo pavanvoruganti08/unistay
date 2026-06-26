@@ -1,8 +1,5 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import PopularHostels from "./components/PopularHostels";
-import Testimonials from "./components/Testimonials";
-import Footer from "./components/Footer";
 
 function App(){
 
@@ -12,13 +9,14 @@ return(
 
 <Navbar/>
 
+
+<div id="home">
+
 <Hero/>
 
-<PopularHostels/>
+</div>
 
-<Testimonials/>
 
-<Footer/>
 
 </>
 
@@ -26,24 +24,4 @@ return(
 
 }
 
-export default App;
-<>
-<Navbar/>
-
-<div id="home">
-<Hero/>
-</div>
-
-<div id="features">
-<WhyChoose/>
-</div>
-
-<div id="about">
-<About/>
-</div>
-
-<div id="contact">
-<Contact/>
-</div>
-
-</>
+export default App
